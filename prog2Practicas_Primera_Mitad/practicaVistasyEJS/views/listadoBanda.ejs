@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <% for( let i = 0; i < bands.length; i++ ) { %>
+        <a href="/bands/id/<%= bands[i].id %> ">
+        <p><%= bands[i].nombre %></p>
+        <img src="<%= bands[i].cover %> " alt="">
+    </a>
+    <% } %>
+   
+  </body>
+</html>

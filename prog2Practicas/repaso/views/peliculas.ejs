@@ -1,0 +1,14 @@
+<%- include('./partials/head') %>  
+  <body>
+<%- include('./partials/header') %>  
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+      <% peliculas.forEach(element => { %>
+        <ul>
+          <li> <%= element.title %> </li>
+        </ul>
+      <% }) %></li>
+    
+<%- include('./partials/footer') %>  
+  </body>
+</html>

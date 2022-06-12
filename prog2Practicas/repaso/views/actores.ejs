@@ -1,0 +1,15 @@
+<%- include('./partials/head') %>  
+  <body>
+<%- include('./partials/header') %>  
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+      <% actores.forEach(element => { %>
+        <ul>
+          <li> <%= element.last_name %> </li>
+        </ul>
+      <% }) %></li>
+
+
+<%- include('./partials/footer') %>  
+  </body>
+</html>
